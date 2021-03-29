@@ -9,7 +9,7 @@
 
 在掘金看到了一篇《[用Node+wechaty写一个爬虫脚本每天定时给女(男)朋友发微信暖心话][1]》后，我就想为什么不用 Python 去实现这个功能呢。 JUST DO IT，说做就做。  
 这文章的结构也是参考上面这位朋友的。  
-本来只是写单人的，不过有些优（作）秀（死）的人表示女朋友不止一个。现已支持添加多人信息。
+本来只是写单人的，不过有些优（作）秀（死）的人表示男朋友不止一个。现已支持添加多人信息。
 
 ### 项目地址：
 Github: [https://github.com/sfyc23/EverydayWechat](https://github.com/sfyc23/EverydayWechat)。
@@ -21,7 +21,7 @@ Github: [https://github.com/sfyc23/EverydayWechat](https://github.com/sfyc23/Eve
 - [APScheduler][5] - 定时任务
 
 ### 功能
-定时给女朋友发送每日天气、提醒、每日一句。
+定时给朋友发送每日天气、提醒、每日一句。
 
 ### 数据来源
 - 每日一句和上面的大佬一样也是来自 [ONE●一个][6]
@@ -39,7 +39,7 @@ Github: [https://github.com/sfyc23/EverydayWechat](https://github.com/sfyc23/Eve
 ![](http://vlog.sfyc23.xyz/wechat_everyday/20190312011740.png)  
 
 - city_dict.py ：城市对应编码字典
-- config.yaml ：设置定时时间，女友微信名称等参数
+- config.yaml ：设置定时时间，朋友微信名称等参数
 - GFWeather.py：核心代码
 - requirements.txt：需要安装的库
 - run.py：项目运行类
@@ -47,11 +47,11 @@ Github: [https://github.com/sfyc23/EverydayWechat](https://github.com/sfyc23/Eve
 ### 核心代码
 
 #### 1. 定时任务。
-每天 9：30 给女朋友们开始给女朋友发送内容。
+每天 9：30 给朋友们开始给朋友发送内容。
 ```
 # 定时任务
 scheduler = BlockingScheduler()
-# 每天9：30给女朋友发送每日一句
+# 每天9：30给朋友发送每日一句
 # scheduler.add_job(start_today_info, 'cron', hour=9, minute=30)
 scheduler.start()
 ```
@@ -155,9 +155,9 @@ dictum_channel: 2
 
 girlfriend_infos:
   -
-    #女友微信昵称
+    #朋友微信昵称
     wechat_name: '古典'
-    #女友所在桂林
+    #朋友所在桂林
     city_name: '桂林'
     # 从那天开始勾搭的（可空）
     start_date: '2017-11-11'
@@ -198,7 +198,7 @@ sudo docker run --name '项目所在地址'
 
 ## 最后
 项目地址：[https://github.com/sfyc23/EverydayWechat](https://github.com/sfyc23/EverydayWechat)  
-写完后才发现，我并没有女朋友啊！
+写完后才发现，我并没有男朋友啊！
 
 ## 类似项目
 
