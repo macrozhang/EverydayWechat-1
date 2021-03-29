@@ -1,5 +1,5 @@
 ![python_vesion](https://img.shields.io/badge/Python%20-%3E%3D%203.5-green.svg)  
-# 用 Python + itchat 写一个爬虫脚本每天定时给多个女友发给微信暖心话
+# 用 Python + itchat 写一个爬虫脚本每天定时给多个用户发送微信提示
 
 ## 项目介绍：
 
